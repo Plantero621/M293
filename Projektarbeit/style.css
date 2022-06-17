@@ -1,0 +1,99 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit);
+    grid-template-rows: 1fr repeat(auto-fit, minmax(250px, 1fr));
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    border-color: black;
+    border-style: solid;
+    margin: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.head {
+    grid-area: 1 / 1 / 2 / 6;
+    border-style: solid;
+}
+
+.inhalt {
+    grid-area: 2 / 1 / 5 / 6;
+    border-style: solid;
+    height: fit-content;
+}
+
+.inhalt .side {
+    /*grid-area: 2 / 5 / 5 / 6;*/
+    width: 20%;
+    padding: 2%;
+    box-sizing: border-box;
+    margin: 0%;
+    float: right;
+    list-style-type:none;
+    border-radius: 25px;
+    background: url(https://st2.depositphotos.com/1000459/10421/i/950/depositphotos_104213084-stock-photo-green-leaf-texture.jpg);
+    background-position: left top;
+    font-size: 2.5vw;
+}
+
+.inhalt img {
+    width: 20%;
+    height: 20%;
+    margin: 10px;
+    margin-bottom: 5px;
+    float: left;
+}
+
+.side ul {
+    list-style-type: none;
+    width: 70%;
+    margin: auto;
+}
+
+.side li a {
+    color:aliceblue;
+    text-decoration: none;
+    text-align: justify;
+}
+@media screen and (max-width: 500px) {
+    .side {
+      text-align: left;
+      position: sticky;
+      display: inline;
+      padding: 0px;
+    }
+    .side li a{
+        text-align: left;
+        padding: 0px;
+    }
+    .side ul {
+        padding: 0px;
+    }
+} 
+
+
+
+.head header {
+    background-color: #273B0E;
+    align-items: center;
+}
+
+header * {
+    display: inline;
+}
+
+header li {
+    margin: 20px;
+}
+
+header li a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+    .head a {
+      text-align: center;
+      float: none;
+      display: block;
+    }
+}
