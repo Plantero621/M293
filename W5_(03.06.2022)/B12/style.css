@@ -28,3 +28,13 @@ p {
     padding: 10px;
     margin: 0;
 }
+
+img {
+    width: 100px;
+    margin: 0px 10px 10px 0px;
+    padding: 0%;
+    border-width: 3px;
+    border-color: orange;
+    border-style: solid;
+    float: left;
+}
