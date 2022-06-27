@@ -1,7 +1,7 @@
 html {
 
 
-    background-image: url("media/images/cobblestoneParallax.jpg");
+    background-image: url("media/images/billiardparrallax.JPG");
     min-height: 500px;
     background-attachment: fixed;
     background-position: center;
@@ -67,13 +67,20 @@ header a.active {
 
 main {
     grid-area: 2 / 1 / 4 / 4;
+    padding: 10px;
 }
 
+h1, h2 {
+    line-height: 2 ;
+    margin-top: 0 ;
+    margin-bottom: 0 ;
+  }
+
 aside {
-    position: fixed;
+    position: relative;
     z-index: 1;
-    top: 120px;
-    right: 65px;
+    top: 20px;
+    right: 20px;
     width: 100px;
     background: #5A5B5A;
     overflow-x: hidden;
@@ -81,6 +88,7 @@ aside {
 }
 
 aside a {
+    text-align: center;
     padding: 6px;
     margin: 3px;
     text-decoration: none;
@@ -119,6 +127,7 @@ footer {
     }
 
     aside {
+        position: unset;
         margin-top: 100px;
         min-width: 100px;
         max-width: fit-content;
