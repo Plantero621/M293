@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="DE"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominic Plattner</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body class="parent">
+
+    <header>
+        <img src="media/images/logos/logo_small.png">
+        <div class="header-right">
+            <a href="index.html">Home</a>
+            <a href="about.html">Über mich</a>
+            <a href="occupation.html">Tätigkeit</a>
+            <a href="events.html">Events</a>
+            <a class="active" href="contact.html">Kontakt</a>
+            <a href="login.html">Log-in</a>
+            <a href="disclaimer.html">Disclaimer</a>
+        </div>
+    </header>
+
+    <main>
+        <h1>
+            Kontaktier mich
+        </h1>
+        <form action="https://formsubmit.co/dominic.plattner03@gmail.com" method="POST" class="contact">
+            <div>
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name" minlength="1" maxlength="30" required />
+            </div>
+
+            <div>
+                <label for="email">Email</label><br>
+                <input type="email" id="mail" name="email" required />
+            </div>
+
+            <div>
+                <label for="message">Nachricht</label><br>
+                <textarea name="message" id="message" cols="21" rows="5"></textarea>
+            </div>
+
+            <div>
+                <input type="submit" value="submit" class="button">
+                <input type="reset" value="reset" class="button">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        @Plantero 2021 alle Rechte vorbehalten
+    </footer>
+</body>
+</html>

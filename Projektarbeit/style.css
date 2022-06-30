@@ -79,6 +79,7 @@ main {
     grid-area: 2 / 1 / 4 / 4;
     padding: 10px;
     height: fit-content;
+
 }
 
 main img {
@@ -92,6 +93,26 @@ h1, h2 {
     margin-top: 0 ;
     margin-bottom: 0 ;
   }
+form {
+    text-align: left;
+    display: inline-block;
+    margin-left: 40%;
+    width: fit-content;
+    background-color: #5A5B5A;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+form #mail {
+    border-radius: 4px;
+}
+form #message {
+    border-radius: 4px;
+}
+
+form #name {
+    border-radius: 4px;
+}
 
 aside {
     position: relative;
